@@ -1,0 +1,24 @@
+@startuml name
+title 相関図
+skinparam ObjectBorderColor #000
+
+object ラフ #f5ff0a {
+color = #f5ff0a
+arms = a
+job = a
+}
+object らいふぱん #cc0000 {
+color = #cc0000
+arms = b
+job = b
+}
+object あめ #66ccff {
+color = #66ccff
+arms = c
+job = c
+}
+
+らいふぱん -[#00f7f7]-> ラフ : 注釈1
+あめ -[dotted]-> ラフ : 注釈2
+あめ -[thickness=8]-> らいふぱん : 注釈3
+@enduml

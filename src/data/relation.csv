@@ -1,0 +1,4 @@
+relNum,fromKey,toKey,style,note
+r001,m002,m001,#00f7f7,注釈1
+r002,m003,m001,dotted,注釈2
+r003,m003,m002,thickness=8,注釈3
