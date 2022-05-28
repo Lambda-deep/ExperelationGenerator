@@ -8,12 +8,12 @@ def main():
     mems = []
     rels = []
     
-    csv_member = open("src\data\member.csv", "r")
+    csv_member = open("src/data/member.csv", "r")
     f = csv.DictReader(csv_member, delimiter=",")
     for row in f:
         mems.append(Member(**row))
 
-    csv_relation = open("src\data\\relation.csv", "r")
+    csv_relation = open("src/data/relation.csv", "r")
     f = csv.DictReader(csv_relation, delimiter=",")
     for row in f:
         rels.append(Relation(**row))
@@ -22,7 +22,7 @@ def main():
     uml.addMembers(mems)
     uml.addRelations(rels)
     
-    f = open('src\export\experelation.pu', 'w')
+    f = open('src/export/experelation.pu', 'w')
     f.write(uml.toString())
 
 main()
