@@ -22,7 +22,9 @@ def main():
     uml.addMembers(mems)
     uml.addRelations(rels)
     
+    result = uml.toString()
+    print(result)
     f = open('src/export/experelation.pu', 'w')
-    f.write(uml.toString())
+    f.write(result)
 
 main()
